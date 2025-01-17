@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Gulzar&family=Ruwudu&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Gulzar&family=Lobster&family=Ruwudu&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Gulzar&family=Lobster&family=Ruwudu&family=Shadows+Into+Light&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Gulzar&family=Lobster&family=Mada:wght@200..900&family=Ruwudu:wght@400;500;600;700&family=Shadows+Into+Light&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=Gulzar&family=Lobster&family=Mada:wght@200..900&family=Reem+Kufi:wght@400..700&family=Ruwudu:wght@400;500;600;700&family=Shadows+Into+Light&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&family=El+Messiri:wght@400..700&family=Gulzar&family=Lobster&family=Mada:wght@200..900&family=Reem+Kufi:wght@400..700&family=Ruwudu:wght@400;500;600;700&family=Shadows+Into+Light&family=Single+Day&display=swap');
+
+
+
+.One{
+    background-color: var(--div-color);
+    position: fixed;
+    padding-left: 20px;
+    width: 20%;
+    border-radius: 10px;
+    /* height: 150px; */
+
+    height: 25%;
+}
+*{
+    text-decoration: none;
+}
+.One h3{
+    color: var(--white);
+    padding-left: 20px;
+    font-family: 'Single Day', cursive;
+}
+.One i{
+    color: var(--white);
+    cursor: pointer;
+}
+.One span{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+html{
+    --background: black;
+    --div-color: rgb(18,18,18);
+    --white: white;
+    --grise: rgb(179,179,179);
+    --color-carte: rgb(24,24,24);
+}
+body{
+    background-color: var(--background);
+}
+.not-checked h3,.not-checked i{
+    color: var(--grise);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.not-checked:hover h3,.not-checked:hover i{
+    color: var(--white);
+}
+.One .checked h3,.One .checked i{color: var(--white);cursor: pointer;}
+
+.One .home h3,.One .home i{cursor: pointer;}
+
+
+
+.Tow{
+    width: 20%;
+    position: fixed;
+    background-color: var(--div-color);
+    top: 165px;
+    /* margin-top: 12%; */
+    /* margin-top: 9.7em; */
+    padding-left: 20px;
+    /* height: 383px; */
+    height: 63%;
+    border-radius: 10px;
+}
+
+
+.container{
+    background-color: var(--div-color);
+    position: absolute;
+    width: 1052px;
+    /* height: 540px; */
+    height: 88.8%;
+    left: 306px;
+    border-radius: 10px;
+    overflow: auto;
+    transition: opacity 1.5s;
+    animation: zindex 0.2s 1.3s forwards reverse;
+}
+
+.sinup{
+    position: absolute;
+    z-index: 20000;
+    width: 1350px;
+    height: 45px;
+    background: linear-gradient(135deg, #2980B9, #FFFFFF, #27AE60);
+    bottom: 6px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.sinup:hover{cursor: pointer;}
+.sinup .activp{
+    position: absolute;
+    color: var(--background);
+    font-weight: bold;
+    padding-left: 20px;
+    min-width: max-content;
+    animation: lliser 10s forwards;
+    transform: translateX(-100%);
+}
+.desactivp{
+    display: none;
+}
+@keyframes lliser {
+  100%{transform: translateX(0%);}
+}
+.sinup input{
+    position: absolute;
+    right: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.4s;
+}
+.sinup .frbtnp{
+    animation: anfrbtnp 2s forwards;
+}
+.sinup input:hover{
+ transform: scale(1.1);
+}
+@keyframes anfrbtnp {
+    0%{transform: translateX(-50%);}
+    100%{transform: translateX(0%);}
+}
+
+.container nav{
+    width: 100%;
+    height: 68px;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.1s;
+}
+.container #title1{
+    margin-top: -14px;
+    padding-left: 40px;
+    position: relative;
+}
+.titleprim{
+    background: linear-gradient(0deg, rgb(31,31,31) 0%, var(--div-color) 100%);
+}
+.container #title1 h2,.container #title1 h5{
+    color: var(--white);
+    cursor: pointer;
+}
+.container #title1 #artitle{
+    font-family: 'Gulzar', serif;
+    font-size: 15px;
+    position: absolute;
+    top:5px;
+    left: 140px;
+}
+.container #title1 #entitle{
+    font-family: 'Gulzar', serif;
+    font-size: 20px;
+}
+.container #title1 h3{
+    color: var(--grise);
+    position: absolute;
+    font-size: 15px;
+    right: 40px;
+    top: 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.container #title1 h3:hover{
+    color: var(--white);
+}
+.container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container nav #mo2achir i{
+    color: var(--grise);
+    background-color: rgba(5, 4, 4, 0.43);
+    padding: 12px;
+    border-radius: 50%;
+    cursor: not-allowed;
+}
+.container nav #mo2achir{
+    margin-left: 20px;
+}
+.container nav #sinuplogin{
+    margin-right: 20px;
+}
+.container nav #sinuplogin input{
+    font-size: 20px;
+    font-family: 'Single Day', cursive;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+.container nav #sinuplogin input:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.container nav #sinuplogin #Sign{
+    background-color: transparent;
+    color: var(--white);
+}
+.cartes1 .carte{
+  width: 150px;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-carte);
+  transition: all 0.5s;
+}
+.cartes1 .carte img{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cartes1 .carte h2,.cartes1 .carte i,.cartes1 .carte h6{
+    color: var(--white);
+    position: absolute;
+}
+.cartes1 .carte .fa-book-quran{
+    font-size: 10px;
+    left: 24px;
+    top: 14px;
+    color: black;
+}
+.cartes1 .carte h6{
+    right: 24px;
+    color: var(--background);
+    bottom: 32px;
+    font-size: 15px;
+    word-spacing: 80px;
+    font-family: 'Gulzar', serif;
+}
+.cartes1 .carte h2{
+    bottom: 36px;
+    right: 22px;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+.cartes1 .carte p{
+    position: absolute;
+    bottom: 0px;
+    right: 22px;
+    color: rgb(167,167,167);
+    word-spacing: 5px;
+    direction: rtl;
+}
+.cartes1 .carte:hover{
+    cursor: pointer;
+    background-color: rgb(36,36,36);
+}
+.cartes1{
+    margin-top: -17px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 190px;
+    padding-top: 11px;
+    border-bottom: 1px solid var(--color-carte);
+}
+.cartesprim{
+    background: linear-gradient(180deg, rgb(31,31,31) 0%, rgb(18,18,18) 50%, var(--div-color) 100%);
+}
+.cartes1 .carte .fa-play{
+    color: var(--background);
+    background-color: rgb(62, 244, 62);
+    padding: 13px;
+    border-radius: 50%;
+    position: absolute;
+    right: 25px;
+    opacity: 0;
+    top: 98px;
+    z-index: 3;
+    transition: opacity 0.2s;
+    transition: top 0.2s;
+}
+.cartes1 .carte .fa-play:hover{
+    transition: padding 0.3s ease-in-out;
+    padding: 14px;
+}
+
+
+.container .title2{
+    position: relative;
+    top: 60px;
+}
+.container .carte2{
+    position: relative;
+    top: 40px;
+}
+
+.container::-webkit-scrollbar{width: 10px;}
+.container::-webkit-scrollbar-track{background-color: transparent;}
+.container::-webkit-scrollbar-thumb{
+    background-color: rgba(179, 179, 179, 0);
+    border-radius: 10px;    
+}
+.container:hover::-webkit-scrollbar-thumb{
+    background-color: rgba(179, 179, 179, 0.302);
+}
+
+.container footer{
+    display: flex;
+    position: relative;
+    top: 150px;
+    padding:0px 30px;
+}
+.container footer .info{
+    margin-left: 100px;
+}
+.container footer span i{
+    position: relative;
+    right: -410px;
+    margin: 10px 0px;
+    top: 10px;
+    color: var(--white);
+    margin-left: 20px;
+    background-color: #292929;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 0.2s;
+    cursor: auto;
+}
+.container footer span i:hover{
+    background-color: #605959cf;
+}
+.container footer span h3{
+    color: var(--white);
+    font-size: 23px;
+    font-family: "Single Day", cursive;
+}
+.container footer span a{
+   color: var(--grise);
+   transition: all 0.2s;
+   user-select: auto;
+}
+.container footer span a:hover{
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.container footer #hr{
+    width: 95%;
+    height: 1px;
+    margin: 0 26px;
+    position: relative;
+    background-color: rgb(42,42,42);
+    top: 170px;
+}
+.container footer lottie-player{
+    position: absolute;
+    right: 190px;
+    top: -40px;
+}
+.container footer #edition{
+    color: rgb(147,147,147);
+    font-size: 12px;
+    position: absolute;
+    right: 200px;
+    top: 160px;
+}
+
+.Tow .tone{
+    position: relative;
+    color: rgb(147,147,147);
+    font-family: "Single Day", cursive;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.Tow .tone span{
+    transition: all 0.2s;
+    display: flex;
+    cursor: pointer;
+}
+.Tow .tone span:hover{
+    color: var(--white);
+}
+.Tow .tone span:hover i{
+    animation: tle3hbetsave 0.7s infinite alternate;
+}
+@keyframes tle3hbetsave {
+    100%{transform: translateY(-5px);}
+}
+.Tow .tone span i{
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    font-size: 20px;
+}
+.Tow .tone span h3{
+    position: absolute;
+    left: 23px;
+    font-size: 20px;
+}
+.Tow .tone>i{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: cover;
+}
+.Tow .tone>i:hover{
+    color: var(--white);
+    background-color: var(--color-carte);
+}
+.Tow .tone>.dora{transform: rotateZ(45deg);}
+.Tow .tone lottie-player{
+    position: absolute;
+    z-index: -1;
+}
+
+.Tow .ttow{
+    background-color: rgb(36,36,36);
+    width: 92%;
+    height: 80px;
+    position: absolute;
+    top: 100px;
+    left: 12px;
+    border-radius: 1px 10px 5px 10px;
+    overflow: auto;
+}
+.Tow .ttow h3{
+    direction: rtl;
+    color: var(--white);
+    text-align: center;
+    font-family: "Bahianita", sans-serif;
+    cursor: default;
+    user-select: none;
+}
+.Tow .ttow::-webkit-scrollbar{width: 10px;}
+.Tow .ttow::-webkit-scrollbar-track{background-color: transparent;}
+.Tow .ttow::-webkit-scrollbar-thumb{
+    background-color: rgba(179, 179, 179, 0);
+    border-radius: 10px;    
+}
+.Tow .ttow:hover::-webkit-scrollbar-thumb{
+    background-color: rgba(179, 179, 179, 0.302);
+}
+
+a,h1,h2,h3,h4,h5,h6,p,img{user-select: none;}
+
+.Tow .ttree{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 220px;
+}
+.Tow .ttree span{
+    display: flex;
+}
+.Tow .ttree span a{
+    margin-right: 20px;
+    font-size: 14px;
+    margin-top: -20px;
+    color: var(--grise);
+    cursor: pointer;
+}
+.Tow button{
+    background-color: transparent;
+    position: relative;
+    top: 230px;
+    color: var(--white);
+    border: 2px solid rgb(36,36,36);
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.Tow button:hover{
+    border-color: var(--white);
+    transform: scale(1.1);
+}
+
+.Tow .tone .d5el5rej{
+    background-color: rgb(36,36,36);
+    position: absolute;
+    top: 50px;
+    right: -100%;
+    width: 150px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 100;
+}
+.Tow .tone .d5el5rej:hover{
+    background-color: transparent;
+}
+.Tow .tone .d5el5rej h5{
+    position: relative;
+    left: 38px;
+    margin-left: 3px;
+    top: 3px;
+}
+.Tow .tone .d5el5rej i{
+    position: relative;
+    margin-right: -27px;
+    left: 10px;
+}
+.Tow .tone .non{
+   right: 10px;
+   opacity: 1;
+}
+
+
+.containerhidden{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    animation: zindex 0.2s 1.1s forwards;
+}
+@keyframes zindex {
+    100%{z-index: -102;}
+}
+
+.container2hidd nav #sinuplogin{
+    margin-right: 30px;
+}
+.container2hidd nav #reshearch{
+    background-color: rgb(36,36,36);
+    border-radius:30px;
+    position: absolute;
+    left: 270px;
+    transition: all 0.4s;
+}
+.container2hidd nav #reshearch i{
+    color: rgba(255, 255, 255, 0.589);
+    margin-left: 20px;
+    margin-right: 10px;
+    transition: all 0.2s;
+}
+.container2hidd nav #reshearch input{
+    padding-right: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 250px;
+    color: var(--white);
+}
+.container2hidd nav #reshearch .fa-plus{
+    position: absolute;
+    top: 18px;
+    left: 296px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: display 0.2s;
+    transition: opacity 0.6s;
+}
+.container2hidd nav #reshearch .fa-plus:hover{
+    color: var(--white);
+}
+
+.container2hidd nav .not-reshearch{
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 5s;
+}
+.container2hidd nav .reshearch{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 5s;
+}
+
+.message{
+    position: absolute;
+    background-color: rgb(13, 113, 234);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 10px 30px;
+    top: 230px;
+    left: 310px;
+    transition: all 0.4s;
+    opacity: 0;
+}
+.message:hover{
+    background-color: rgba(13, 113, 234, 0.502);
+}
+.message #not{
+    display: inline-block;
+    margin-left: 100px;
+    color: var(--grise);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.message #not:hover{
+    color: var(--white);
+}
+.message a button{
+    color: black;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.message a button:hover{
+    transform: scale(1.1);
+}
+.messageexiste{
+    position: absolute;
+    opacity: 1;
+    z-index: 10000;
+    transition: all 0.4s;
+}
+
+.container .cartes1 span #kahf{
+    word-spacing: 70px;
+}
+.container .cartes1 span #a3dam{
+    color: var(--white);
+    right: 22px;
+    font-size: 12px;
+    word-spacing: 10px;
+    top: -14px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #yas{
+    color: var(--white);
+    font-family: "Ruwudu", serif;
+    word-spacing: 5px;
+    top: -25px;
+}
+.container .cartes1 span #yas2{
+    color: var(--white);
+    font-family: "Ruwudu", serif;
+    word-spacing: 5px;
+    top: -13px;
+}
+.container .cartes1 span #molk{
+    font-size: 20px;
+    font-family: "Reem Kufi", sans-serif;
+    word-spacing: 3px;
+}
+
+
+.cartes1 .carte .fa-microphone{
+    font-size: 11px;
+    left: 24px;
+    top: 14px;
+    color: var(--white);
+}
+
+.container .cartes1 span #riwyat{
+    color: var(--white);
+    bottom: 45px;
+    right: 30px;
+    word-spacing: 2px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #na7n{
+    color: var(--white);
+    top: -40px;
+    right: 40px;
+    word-spacing: 2px;
+    font-size: 20px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #m3a{
+    color: var(--white);
+    top: -30px;
+    right: 60px;
+    word-spacing: 2px;
+    font-size: 20px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #Quran{
+    color: var(--white);
+    top: -10px;
+    right: 70px;
+    word-spacing: 2px;
+    font-size: 20px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #badr{
+    color: rgba(255, 243, 243, 0.583);
+    top: 80px;
+    right: 25px;
+    word-spacing: 2px;
+    font-size: 14px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #mansour{
+    color: rgba(255, 243, 243, 0.583);
+    top: 80px;
+    right: 25px;
+    word-spacing: 2px;
+    font-size: 14px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #kif{
+    color: rgba(4, 2, 2, 0.838);
+    top: 0px;
+    right: 50px;
+    word-spacing: 2px;
+    font-size: 15px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #osarona{
+    color: rgba(4, 2, 2, 0.838);
+    top: 15px;
+    right: 60px;
+    word-spacing: 2px;
+    font-size: 18px;
+    font-family: "Reem Kufi", sans-serif;
+}
+.container .cartes1 span #jana{
+    color: rgb(4, 2, 2);
+    top: 40px;
+    right: 70px;
+    word-spacing: 2px;
+    font-size: 19px;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+
+/* After S4 */
+
+#lkol_lang{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 1400px;
+    height: 100%;
+    z-index: 100;
+    background: rgba(7, 8, 7, 0.7) ;   /*  40% opaque green */ 
+    display: flex;
+    justify-content: center;
+}
+
+#page_of_languages{
+    position: absolute;
+    background-color: #282828;
+    width: 1000px;
+    height: 83%;
+    top: 8%;
+    border-radius: 15px 7px;
+}
+
+#message_fo_choice{
+    color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    position: relative;
+    height: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 14px;
+}
+
+div#ligne{
+ width: 100%;
+ height: 1px;
+ position: relative;
+ top: 10px;
+ background-color: rgba(255, 243, 243, 0.26);
+}
+
+#message_fo_choice i{
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 40%;
+    font-size: 30px;
+    color: #615a5a;
+}
+
+#message_fo_choice i:hover{
+    color: white;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+#page_of_languages table{
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+} 
+
+#page_of_languages table tr td{
+    padding: 30px;
+}
+
+
+
+
+
+                                                /*After 10 months in INSEA */
